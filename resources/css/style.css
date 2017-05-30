@@ -143,3 +143,115 @@ footer {
 footer .logo {
   padding: 4rem;
 }
+
+/* Media Queries */
+
+/* --- Greater than 650px ---  */
+@media only screen and (min-width: 650px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 22rem;
+    background-position: 30%;
+  }
+
+  .logo span {
+    display: block;
+  }
+
+  nav {
+    display: block;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    display: inline-block;
+    padding: 1rem 2rem 1rem 0;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  h1 {
+    display: inline-block;
+    top: 8rem;
+    right: 1rem;
+    height: 2rem;
+    padding: 0.75rem 2rem;
+    font-size: 1.33rem;
+  }
+
+  .text-blocks {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    padding: 0;
+  }
+
+  figure {
+    padding: 3rem;
+  }
+
+  .text-item {
+    width: 35%;
+    padding: 2.5%;
+  }
+
+  h2 {
+    display: inline-block;
+    width: 10rem;
+    padding: 0.5rem 1.25rem;
+    text-align: left;
+  }
+
+  footer {
+    justify-content: flex-start;
+  }
+}
+
+/* --- Greater than 750px --- */
+
+@media only screen and (min-width: 750px) {
+  h1 {
+    right: 2rem;
+    padding: 0.75rem 4rem;
+  }
+}
+
+/* --- Greater than 960px --- */
+
+@media only screen and (min-width: 960px) {
+  header {
+    height: 31rem;
+  }
+
+  .container {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .nav-bar {
+    position: absolute;
+    top: 1rem;
+    width: 960px;
+    align-self: center;
+  }
+
+  h1 {
+    top: 14rem;
+    height: 3rem;
+    padding: 1.5rem 5rem;
+    font-size: 2rem;
+  }
+}
